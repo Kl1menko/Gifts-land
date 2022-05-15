@@ -104,6 +104,8 @@ img {
     }
 }
 
+/*background: url('../img/bg3.png') no-repeat;
+    background-position: bottom -30px right -20px;*/
 
 .top-content {
     background: url('../img/bg3.png') no-repeat;
@@ -323,4 +325,111 @@ img {
         font-size: 20px;
         line-height: 100%;
     } 
+}
+
+/*************MATTERS******************/
+
+.matters__wrap {
+    background: url('../img/bg_blue.png');
+}
+
+.matters-block {
+    padding: 60px 0;
+}
+
+.matters-block__title h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+.matters-block__title p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+.matters-block__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35px;
+    margin-top: 40px;
+    
+}
+
+.matters-block__item {
+    width: 33%;
+}
+
+.item__sub h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 133%;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+.item__sub p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    letter-spacing: 0.003em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+@media (max-width: 800px) {
+    .matters-block__title h2 {
+        font-size: 38px;
+        line-height: 54px;
+    }
+
+    .matters-block__title p {
+        margin-top: 15px;
+    }
+
+    .matters-block__items {
+        justify-content: space-between;s
+        align-items: center;
+        gap: 15px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .matters-block__items {
+        flex-direction: column;
+        row-gap: 30px;
+        
+    }
+}
+
+@media (max-width: 420px) {
+    .matters-block__item {
+        width: 100%;
+    }
+
+    .matters-block__title h2 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 44px;
+        padding: 0 20px;
+    }
+
+    .matters-block__title p {
+        font-size: 16px;
+        line-height: 128%;
+        padding: 0 30px;
+    }
 }
